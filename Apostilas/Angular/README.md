@@ -166,7 +166,7 @@ https://spectacled-falcon-84a.notion.site/Services-084263917963416fbba57561ccaad
 - Gerencia navegação em app Angular.
 - Define rotas e associa a componentes.
 - Permite navegação condicional e guardas.
-
+https://spectacled-falcon-84a.notion.site/Routes-24b43ddcdc7a425285e7b63dfcaad87a
 
 
 
@@ -175,6 +175,7 @@ https://spectacled-falcon-84a.notion.site/Services-084263917963416fbba57561ccaad
 - Os principais métodos são: Get, Post, Put e Delete.
 - Pacotes angular HttpClient e HttpHeaders;
 - Inicialização do HttpClientModule;
+https://spectacled-falcon-84a.notion.site/Requisi-o-HTTP-443dc0db6f33461cbe24f455434b9210
 
 # Criar api
 
