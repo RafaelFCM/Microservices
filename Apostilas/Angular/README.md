@@ -162,11 +162,23 @@ https://spectacled-falcon-84a.notion.site/Services-084263917963416fbba57561ccaad
 ![image](https://github.com/RafaelFCM/Microservices/assets/100213402/b7ffc2e5-f44b-439b-8f7f-88d5af7fa0a3)
 
 
+### Routes/Rotas
+- Gerencia navegação em app Angular.
+- Define rotas e associa a componentes.
+- Permite navegação condicional e guardas.
 
 
 
 
+###Requisição HTTP 
+- Os métodos HTTP são utilizados para comunicação cliente servidor;
+- Os principais métodos são: Get, Post, Put e Delete.
+- Pacotes angular HttpClient e HttpHeaders;
+- Inicialização do HttpClientModule;
 
+# Criar api
+
+Para simular uma aplicação, vamos instalar o json. Não é o melhor modelo, mas nos ajudará a entender os métodos e como a aplicação integrará com o backend.
 
 
 
