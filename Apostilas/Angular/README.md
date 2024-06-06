@@ -21,9 +21,15 @@ de troca de dados simples e rápida entre sistemas.
 
 ![image](https://github.com/RafaelFCM/Microservices/assets/100213402/4e7c83ec-8f9e-4704-952c-b02b2f1f034a)
 
-![image](https://github.com/RafaelFCM/Microservices/assets/100213402/e0bdce3d-57b6-4be8-a0b7-d2e04814ff81)  ![image](https://github.com/RafaelFCM/Microservices/assets/100213402/22cb8b56-4c2e-4ae5-bfc7-0cbc3d49f113)
+![image](https://github.com/RafaelFCM/Microservices/assets/100213402/e0bdce3d-57b6-4be8-a0b7-d2e04814ff81)  
 
+![image](https://github.com/RafaelFCM/Microservices/assets/100213402/22cb8b56-4c2e-4ae5-bfc7-0cbc3d49f113)
 
+![image](https://github.com/RafaelFCM/Microservices/assets/100213402/667c94fb-756b-47ba-9feb-7e1e643eabed)
 
+![image](https://github.com/RafaelFCM/Microservices/assets/100213402/b97ac1db-d725-4c06-ad74-76703b6b575d)
 
+![image](https://github.com/RafaelFCM/Microservices/assets/100213402/b4de36fe-bb1d-462d-9e25-a0cb30a0ab69)
+
+![image](https://github.com/RafaelFCM/Microservices/assets/100213402/ae738724-3272-440c-ae28-596e592471e6)
 
