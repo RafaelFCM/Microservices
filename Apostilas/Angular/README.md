@@ -48,8 +48,11 @@ Criando componentes com o terminal do vs code: ng generate component components/
 
 Configurar o import:
 1. Abra o app-component.ts e configure o import:
+
 ![image](https://github.com/RafaelFCM/Microservices/assets/100213402/032b0cdc-88f9-463f-9315-88660fcddc6f)
-2. Inserir a tag no app-component.html para finalizarmos a inserção do component
+
+3. Inserir a tag no app-component.html para finalizarmos a inserção do component
+
 ![image](https://github.com/RafaelFCM/Microservices/assets/100213402/d20ccef0-ca3c-433c-b969-3c6a7d242437)
 
 Interpolação de dados:
@@ -57,6 +60,7 @@ Interpolação de dados:
 - A impressão é feita através do double mustache{{dado}};
 Exemplo: Podemos criar um atributo na classe do componente e utilizarmos na renderização;
 Fazer o import do módulo CommonModule para poder utilizar a diretiva ngFor no exemplo.
+
 ![image](https://github.com/RafaelFCM/Microservices/assets/100213402/eaacf326-60ef-42f7-8e75-1a45c4564dfa)
 
 ![image](https://github.com/RafaelFCM/Microservices/assets/100213402/4e1e1d93-338b-40ff-8a80-b3de1ce8a734)
