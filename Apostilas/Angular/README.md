@@ -149,7 +149,10 @@ Para testar não se esqueça de inserir no app component
 - Injeção de dependência: Promove a modularidade e manutenção simplificada;
 - Gerenciamento de estado: Ajuda a centralizar e controlar o estado da aplicação;
 - Consumo de API’s;
+  
 https://spectacled-falcon-84a.notion.site/Services-084263917963416fbba57561ccaada16
+
+
 ![image](https://github.com/RafaelFCM/Microservices/assets/100213402/8cb3041f-a309-49fe-8415-8b319c77091e)
 ![image](https://github.com/RafaelFCM/Microservices/assets/100213402/df65ce98-8da2-48ee-8495-ba09767086ef)
 ![image](https://github.com/RafaelFCM/Microservices/assets/100213402/e21fbb75-bc8d-4247-b479-24aba7b207d8)
