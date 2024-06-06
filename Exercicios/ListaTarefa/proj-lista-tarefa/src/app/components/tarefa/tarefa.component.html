@@ -1,0 +1,28 @@
+<!-- formGroup criar um formulário reativo -->
+<form [formGroup]="tarefaForm" (ngSubmit)="insert()">
+    <label>
+        Título:
+        <input type="text" formControlName="titulo">
+    </label>
+    <label>
+        Descrição:
+        <input type="text" formControlName="descricao">
+    </label>
+    <label>
+        Data Vencimento:
+        <input type="text" formControlName="dataVencimento">
+    </label>
+    <button type="submit">Submit</button>
+</form>
+
+<hr>
+
+Tarefas
+<ul>
+    <!-- Percorrer a lista de tarefas com o novo for do angular 17 -->
+    @for (item of tarefas; track $index)
+    {
+    <li>{{item.id}} - {{item.titulo}} - {{item.descricao}} - {{item.dataVencimento}}<input type="button" (click)="remover(item.id)" value="remover" /></li>
+    }
+
+</ul>
