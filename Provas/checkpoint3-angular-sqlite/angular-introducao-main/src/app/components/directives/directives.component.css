@@ -1,0 +1,14 @@
+.text-success{
+    color: green;
+}
+
+.text-danger{
+    background-color: red;
+}
+
+.special{
+    border: 1px solid red;
+    padding: 20px;
+    margin: 20px;
+    
+}

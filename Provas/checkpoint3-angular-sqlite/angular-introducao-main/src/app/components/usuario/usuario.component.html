@@ -1,0 +1,27 @@
+<!-- formGroup criar um formulário reativo -->
+<form [formGroup]="usuarioForm" (ngSubmit)="insert()">
+    <label>
+        Nome:
+        <input type="text" formControlName="nome">
+    </label>
+    <label>
+        Senha:
+        <input type="text" formControlName="senha">
+    </label>
+    <button type="submit">Submit</button>
+</form>
+
+<hr>
+
+Usuarios
+<ul>
+    <!-- Percorrer a lista de clientes com o novo for do angular 17 -->
+    @for (item of usuarios; track $index)
+    {
+    <li>
+        {{item.nome}} - {{item.senha}} <input type="button" (click)="remover(item.id)" value="remover" /> 
+        <a href="/usuario/{{item.id}}" >editar</a>
+    </li>
+    }
+
+</ul>
