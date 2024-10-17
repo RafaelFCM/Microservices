@@ -4,7 +4,14 @@ const app = express();
 
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://02rafamiranda:1234@cluster0.nz5ym.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+mongoConnectionString = 'mongodb+srv://usuarioTeste:senhaTeste@cluster0.erxtc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+
+mongoose.connect(mongoConnectionString, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
+    .then(() => console.log('Conexão com o MongoDB estabelecida com sucesso!'))
+    .catch((err) => console.error('Erro ao conectar ao MongoDB:', err));
 
 app.use(express.json());
 //Converte o corpo da requisição para JSON, permitindo que o servidor entenda e manipule dados enviados em formato JSON.

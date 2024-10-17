@@ -1,11 +1,12 @@
 {
-  "name": "api_com_node",
+  "name": "conectando_mongodb",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./bin/server.js"
+    "start": "node ./bin/server.js",
+    "dev": "nodemon ./bin/server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,7 @@
   "dependencies": {
     "debug": "^4.3.7",
     "express": "^4.21.0",
-    "mongodb": "^6.9.0",
-    "mongoose": "^8.7.0"
+    "mongoose": "^6.13.3",
+    "nodemon": "^3.1.7"
   }
 }

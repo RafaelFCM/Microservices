@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "your-id",
+		"name": "API Test Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Root",
+			"request": {
+				"method": "GET",
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			}
+		},
+		{
+			"name": "GET Private",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "meuTokenSecreto",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/private",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"private"
+					]
+				}
+			}
+		},
+		{
+			"name": "GET Donos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "tokenDonos",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/donos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"donos"
+					]
+				}
+			}
+		},
+		{
+			"name": "POST Submit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"username\": \"user123\", \"email\": \"user@example.com\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/submit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"submit"
+					]
+				}
+			}
+		},
+		{
+			"name": "GET Data with Rate Limiting",
+			"request": {
+				"method": "GET",
+				"url": {
+					"raw": "http://localhost:3000/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"data"
+					]
+				}
+			}
+		},
+		{
+			"name": "GET Item",
+			"request": {
+				"method": "GET",
+				"url": {
+					"raw": "http://localhost:3000/items/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items",
+						"1"
+					]
+				}
+			}
+		},
+		{
+			"name": "PUT Update Item",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\": \"newName\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/items/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items",
+						"1"
+					]
+				}
+			}
+		},
+		{
+			"name": "DELETE Item",
+			"request": {
+				"method": "DELETE",
+				"url": {
+					"raw": "http://localhost:3000/items/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items",
+						"1"
+					]
+				}
+			}
+		},
+		{
+			"name": "POST Envio WhatsApp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"data\": \"someData\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/envio-whatsapp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"envio-whatsapp"
+					]
+				}
+			}
+		},
+		{
+			"name": "GET WhatsApp Status",
+			"request": {
+				"method": "GET",
+				"url": {
+					"raw": "http://localhost:3000/envio-whatsapp/123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"envio-whatsapp",
+						"123456"
+					]
+				}
+			}
+		}
+	]
+}

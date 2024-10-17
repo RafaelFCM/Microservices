@@ -4,7 +4,7 @@ const express = require('express')
 const router = new express.Router();
 // Cria um roteador do Express.
 
-//ENDPOINTS, cada um desses abaixo é um, e dependendo do conteudo que colocar depois da / aparece lá no postman
+//ENDPOINTS, cada um desses abaixo é um, e dependendo do conteudo que colcoar depois da / aparece lá no postman
 router.get('/', (req, res, next) => { // Define a rota GET na raiz ('/')
     res.status(200).send({ // Envia uma resposta com o status 200 (sucesso).
         "nome": "Rafael Fiel" // Informações simples da API.
@@ -12,13 +12,13 @@ router.get('/', (req, res, next) => { // Define a rota GET na raiz ('/')
 });
 
 // Obtendo o token do header Authorization
-// 401 Unauthorized
+//401 Unauthorized
 router.get('/private', (req, res) => {
     // Obtendo o token do header Authorization
     const token = req.headers['authorization'];
 
     // Verificando se o token foi enviado e se é válido
-    if (!token || token !== 'meuTokenSecreto') {
+    if (!token || token !== 'token1234') {
         // Retornando o status 401 Unauthorized se o token estiver ausente ou inválido
         return res.status(401).send('Unauthorized: token inválido');
     }
@@ -50,12 +50,12 @@ router.get('/donos', (req, res) => {
         return res.status(401).send('Unauthorized: token inválido');
     }
 
-    // Verificando se o usuário tem acesso ao recurso dos donos
+    // Verificando se o usuário tem acesso ao recurso administrativo
     if (user.role !== 'donos') {
         return res.status(403).send('Forbidden: você não tem permissão para acessar esta área');
     }
 
-    res.send('Bem vindo dono!');
+    res.send('Bem-vindo dono!');
 });
 
 
@@ -100,7 +100,7 @@ router.use((req, res, next) => {
     const timePassed = currentTime - requestCounts[ip].firstRequest;
 
     if (timePassed < TIME_WINDOW && requestCounts[ip].count > RATE_LIMIT) {
-        return res.status(429).send('Too Many Requests: Please try again later.');
+        return res.status(429).send('Muitas requisições: Por favor, tente novamente mais tarde.');
     }
 
     if (timePassed >= TIME_WINDOW) {
@@ -120,7 +120,7 @@ router.get('/data', (req, res) => {
 //Documentação: https://datatracker.ietf.org/doc/html/rfc7231#section-6.5.4
 
 let items = [
-{ id: 0, name: 'Rafael', area: 'Dono'},
+    { id: 0, name: 'Rafael', area: 'Dono' },
     { id: 1, name: 'Luca', area: 'RH' },
     { id: 2, name: 'Pedro', area: 'Contabilidade' },
     { id: 2, name: 'José', area: 'TI' },
@@ -208,7 +208,7 @@ router.post('/items', (req, res) => {
     }
 
     // Criando um novo item
-    const newItem = { id: nextId++, name, area };
+    const newItem = { id: nextId++, name };
 
     // Adicionando o novo item ao "banco de dados"
     items.push(newItem);
@@ -254,7 +254,7 @@ router.get('/envio-whatsapp/:requestId', (req, res) => {
         return res.status(200).json(request);
     } else {
         // Se a requisição não existir, retornar o status 404 Not Found
-        return res.status(404).send('Request not found');
+        return res.status(404).send('Requisição não encontrada');
     }
 });
 
