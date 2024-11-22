@@ -1,0 +1,46 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Moq;
+using Newtonsoft.Json;
+using web_app_domain;
+using web_app_performance.Controllers;
+using web_app_repository;
+
+namespace Test
+{
+    public class ConsumoRepository
+    {
+        private readonly Mock<IConsumoRepository> _userRepositoryMock;
+        private readonly ConsumoController _controller;
+
+        public ConsumoRepository()
+        {
+            _userRepositoryMock = new Mock<IConsumoRepository>();
+            _controller = new ConsumoController(_userRepositoryMock.Object);
+        }
+
+        [Fact]
+        public async Task Get_ConsumoOk()
+        {
+            var consumos = new List<Consumo>() {
+                new() {
+                    ConsumoEnergetico = 1,
+                    Status = "status",
+                    TipoConsumo = "tipo_consumo",
+                    DataCriacao = DateTime.Now
+                }, new() {
+                    ConsumoEnergetico = 1,
+                    Status = "status",
+                    TipoConsumo = "tipo_consumo",
+                    DataCriacao = DateTime.Now
+                }
+            };
+
+            _userRepositoryMock.Setup(r => r.ListarConsumos()).ReturnsAsync(consumos);
+            var result = await _controller.GetConsumo();
+            Assert.IsType<OkObjectResult>(result);
+
+            var okResult = result as OkObjectResult;
+            Assert.Equal(JsonConvert.SerializeObject(consumos), JsonConvert.SerializeObject(okResult.Value));
+        }
+    }
+}
