@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GS2-Microservice\\Projeto\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7DCA1758-40D9-4361-809C-6E357E522B7D}|Projeto\\Projeto.csproj|d:\\gs2-microservice\\projeto\\projeto\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DCA1758-40D9-4361-809C-6E357E522B7D}|Projeto\\Projeto.csproj|solutionrelative:projeto\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DCA1758-40D9-4361-809C-6E357E522B7D}|Projeto\\Projeto.csproj|d:\\gs2-microservice\\projeto\\projeto\\controllers\\consumocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DCA1758-40D9-4361-809C-6E357E522B7D}|Projeto\\Projeto.csproj|solutionrelative:projeto\\controllers\\consumocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\GS2-Microservice\\Projeto\\Projeto\\Startup.cs",
+              "RelativeDocumentMoniker": "Projeto\\Startup.cs",
+              "ToolTip": "D:\\GS2-Microservice\\Projeto\\Projeto\\Startup.cs",
+              "RelativeToolTip": "Projeto\\Startup.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T00:06:03.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsumoController.cs",
+              "DocumentMoniker": "D:\\GS2-Microservice\\Projeto\\Projeto\\Controllers\\ConsumoController.cs",
+              "RelativeDocumentMoniker": "Projeto\\Controllers\\ConsumoController.cs",
+              "ToolTip": "D:\\GS2-Microservice\\Projeto\\Projeto\\Controllers\\ConsumoController.cs",
+              "RelativeToolTip": "Projeto\\Controllers\\ConsumoController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T22:54:48.821Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

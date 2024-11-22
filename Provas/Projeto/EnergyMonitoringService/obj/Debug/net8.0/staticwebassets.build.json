@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "+USOvw8KOVjxNYF8R6jVvj9XPGrz+G/PnvrAAmV+xIM=",
+  "Source": "EnergyMonitoringService",
+  "BasePath": "_content/EnergyMonitoringService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
