@@ -35,10 +35,12 @@ Consumo POST não conseguimos rodar, tentamos diferentes abordagens não sabemos
   - Como Resolver: Ao escrever testes, crie um mock de IConfiguration e passe para o MongoDbService explicitamente. Porém TAMBÉM JÁ está feito
 </br>
 #### Essa é a arquitetura dos arquivos do projeto
+</br>
 ![image](https://github.com/user-attachments/assets/600a532a-6015-4ba6-8eb2-03f81fcdd110)
 </br>
 </br>
 #### GET e POST Consumo não deram certo por erro MongoDB
+</br>
 ![image](https://github.com/user-attachments/assets/3fb5b654-17a4-4716-bfb0-55cbdf5793cd)
 </br>
 </br>
@@ -52,6 +54,7 @@ Consumo POST não conseguimos rodar, tentamos diferentes abordagens não sabemos
 </br>
 </br>
 #### Health deu certo
+</br>
 ![image](https://github.com/user-attachments/assets/125605e3-63e7-4774-b553-23e1c6938e38)
 </br>
 </br>
@@ -59,14 +62,17 @@ Consumo POST não conseguimos rodar, tentamos diferentes abordagens não sabemos
 </br>
 </br>
 #### Esse é o projeto rodando
+</br>
 ![image](https://github.com/user-attachments/assets/1d114d4b-4a5e-4c2a-bca3-b05b53ab8337)
 </br>
 </br>
 #### Esse é o Redis rodando
+</br>
 ![image](https://github.com/user-attachments/assets/3fb5e3a0-5df7-4dda-a98c-a116e8adef66)
 </br>
 </br>
 #### Esse é o docker configurado com Redis e MongoDB rodando
+</br>
 ![image](https://github.com/user-attachments/assets/f809b2c4-68cd-463b-8ecf-6b1e90643963)
 </br>
 </br>
